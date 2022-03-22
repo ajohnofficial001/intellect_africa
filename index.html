@@ -13,30 +13,43 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Battambang&family=Reggae+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-----CSS PRELOADER-->
     <div id="preloader"></div>
 
     <!----Header background video-->
-    <div class="header">
-      <div class="wrapper">
-        <h2 class="dynamic-texts">
-          <span class="invisible">Welcome to Intellect Africa!</span>
-        </h2>
+    <div class="container-fuild">
+      <div class="header">
+        <div class="wrapper">
+          <h2 class="dynamic-texts">
+            <span class="invisible">Welcome to Intellect Africa!</span>
+          </h2>
+        </div>
+        <p>When ambition meets with opportunity, anything is possibe...</p>
+        <video autoplay muted loop id="myVideo">
+          <source src="images/media/intro_video.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
       </div>
-      <p>When ambition meets with opportunity, anything is possibe...</p>
-      <video autoplay muted loop id="myVideo">
-        <source src="images/media/intro_video.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
-      </video>
     </div>
     <!-- START THE NAVBAR SECTION -->
     <nav class="navbar navbar-expand-lg navbar-dark menu shadow" id="navbar">
       <div class="container p-0 m-0">
         <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="" class="img-fluid" />
-          Intellect <span>A</span>
+          <img
+            src="images/logo.png"
+            alt=""
+            class="img-fluid"
+            style="font-family: 'Battambang', cursive"
+          />
+          Intellect <span style="font-family: 'Reggae One', cursive">A</span>
         </a>
         <button
           class="navbar-toggler"
@@ -75,7 +88,11 @@
                 class="dropdown-menu dropstyle"
                 aria-labelledby="navbarScrollingDropdown"
               >
-                <li><a class="dropdown-item" href="#">Virtual Programs</a></li>
+                <li>
+                  <a class="dropdown-item" href="#virtual_programs"
+                    >Virtual Programs</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="#">Online Courses</a></li>
                 <li><a class="dropdown-item" href="#">EducationUSA</a></li>
               </ul>
@@ -84,7 +101,7 @@
               <a class="nav-link" href="education.html">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQs</a>
+              <a class="nav-link" href="#faq">FAQs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -267,7 +284,7 @@
           </p>
           <p class="lead">
             <a
-              href="#"
+              href="education.html"
               class="btn btn-lg btn-secondary fw-bold border-white bg-white"
               >Learn more</a
             >
@@ -312,13 +329,9 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong
-                      >Database management, Secured logins, Interactive user
-                      applications, portfolio creation and many more!</strong
-                    >
-                    We build secure interactive web applications leveraging a
-                    wide range of technology. The technology we use depends on
-                    the project!
+                    <strong> <a href="#contact"> Here!</a></strong>
+                    connect with us via social media, send an email or you can
+                    utilize the message form below!
                   </div>
                 </div>
               </div>
@@ -344,38 +357,10 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>It depends!</strong> Depending on the complexity and
-                    time proximity of your project, a certain level of
-                    commitment is required before work commences on it.
-                  </div>
-                </div>
-              </div>
-              <!--ACCORDION ITEM 3-->
-              <div class="accordion-item shadow mb-3">
-                <h2 class="accordion-header" id="headingThree">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    How do I get a free counselling period with an Intellect
-                    Africa official?
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong
-                      >Get started with the message box
-                      <a href="#contact">below</a>.</strong
-                    >
+                    <strong>It depends!</strong> Each program that require you
+                    to apply for financial aid have specific process for the
+                    aid. You can always reach out to each program's contact
+                    email if there is no detailed information on their website.
                   </div>
                 </div>
               </div>
@@ -429,9 +414,8 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>No.</strong> Before project commences the deal must
-                    be striked. If not satisfied, lodge your complaints on the
-                    project and we work on it for your optimum satisfaction.
+                    <strong>Yes.</strong> We do not require any payment from you
+                    to access the information on our website.
                   </div>
                 </div>
               </div>
@@ -446,8 +430,7 @@
                     aria-expanded="false"
                     aria-controls="collapseFive"
                   >
-                    How do I get a free counselling period with an Intellect
-                    Africa official?
+                    How do I support Intellect Africa?
                   </button>
                 </h2>
                 <div
@@ -458,8 +441,16 @@
                 >
                   <div class="accordion-body">
                     <strong
-                      >Get started with the message box
+                      >Support us by sharing your quality feedback below.
                       <a href="#contact">below</a>.</strong
+                    >
+                    And, we don't mind if you buy us cup of coffe on
+                    <b
+                      ><a
+                        href="https://getfidia.com/pay/@johnadeyemo/"
+                        target="_blank"
+                        >fidia!</a
+                      ></b
                     >
                   </div>
                 </div>
@@ -475,8 +466,7 @@
                     aria-expanded="false"
                     aria-controls="collapseSix"
                   >
-                    How do I get a free counselling period with an Intellect
-                    Africa official?
+                    Who made Intellect Africa?
                   </button>
                 </h2>
                 <div
@@ -487,8 +477,8 @@
                 >
                   <div class="accordion-body">
                     <strong
-                      >Get started with the message box
-                      <a href="#contact">below</a>.</strong
+                      >Check the about us page
+                      <a href="about.html">here!</a>.</strong
                     >
                   </div>
                 </div>
@@ -504,8 +494,7 @@
                     aria-expanded="false"
                     aria-controls="collapseSeven"
                   >
-                    How do I get a free counselling period with an Intellect
-                    Africa official?
+                    Where do I begin on my journey to Education USA?
                   </button>
                 </h2>
                 <div
@@ -515,9 +504,10 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong
-                      >Get started with the message box
-                      <a href="#contact">below</a>.</strong
+                    <strong>
+                      Check the educationUSA page, you will be redirected to
+                      their website where you will find the next step.
+                      <a href="education.html">Here!</a>.</strong
                     >
                   </div>
                 </div>
@@ -993,6 +983,16 @@
               <li><a href="#">Join our team!</a></li>
               <li><a href="#faq">Help</a></li>
             </ul>
+            <button
+              class="fidia-embed-target"
+              data-fidia-username="@johnadeyemo"
+              data-fidia-slug="intellect-africa"
+            ></button>
+
+            <script
+              src="https://embed.getfidia.com/js/payment-embed.js"
+              async
+            ></script>
           </div>
         </div>
       </div>
