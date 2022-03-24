@@ -25,23 +25,22 @@
     <div id="preloader"></div>
 
     <!----Header background video-->
-    <div class="container-fuild">
-      <div class="header">
-        <div class="wrapper">
-          <h2 class="dynamic-texts">
-            <span class="invisible">Welcome to Intellect Africa!</span>
-          </h2>
-        </div>
-        <p>When ambition meets with opportunity, anything is possibe...</p>
-        <video autoplay muted loop id="myVideo">
-          <source src="images/media/intro_video.mp4" type="video/mp4" />
-          Your browser does not support HTML5 video.
-        </video>
+    <div class="header w-100">
+      <div class="wrapper">
+        <h2 class="dynamic-texts">
+          <span class="invisible">Welcome to Intellect Africa!</span>
+        </h2>
       </div>
+      <p>When ambition meets with opportunity, anything is possibe...</p>
+      <video autoplay muted loop id="myVideo">
+        <source src="images/media/intro_video.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
     </div>
+
     <!-- START THE NAVBAR SECTION -->
     <nav class="navbar navbar-expand-lg navbar-dark menu shadow" id="navbar">
-      <div class="container p-0 m-0">
+      <div class="container-fluid w-100 p-0 m-0">
         <a class="navbar-brand" href="index.html">
           <img
             src="images/logo.png"
@@ -159,15 +158,17 @@
                 enable you to develop the broad knowledge and practical skills
                 needed to solve the most complex issues of our time.
               </p>
-              <button
-                type="button"
-                class="rounded-pill btn-rounded border-primary"
-              >
-                Learn more
-                <span>
-                  <i class="fas fa-arrow-right"></i>
-                </span>
-              </button>
+              <a href="education.html#minerva">
+                <button
+                  type="button"
+                  class="rounded-pill btn-rounded border-primary"
+                >
+                  Learn more
+                  <span>
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
+                </button>
+              </a>
             </div>
           </div>
           <div
@@ -210,15 +211,17 @@
                 worldwide. If you're curious and inquisitive enough, learn
                 in-demand skills today.
               </p>
-              <button
-                type="button"
-                class="rounded-pill btn-rounded border-primary"
-              >
-                Learn more
-                <span>
-                  <i class="fas fa-arrow-right"></i>
-                </span>
-              </button>
+              <a href="education.html">
+                <button
+                  type="button"
+                  class="rounded-pill btn-rounded border-primary"
+                >
+                  Learn more
+                  <span>
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -240,15 +243,17 @@
                 recruitment and campus internationalization goals. EducationUSA
                 is your official source on U.S. higher education.
               </p>
-              <button
-                type="button"
-                class="rounded-pill btn-rounded border-primary"
-              >
-                Learn more
-                <span>
-                  <i class="fas fa-arrow-right"></i>
-                </span>
-              </button>
+              <a href="education.html#educationUSA">
+                <button
+                  type="button"
+                  class="rounded-pill btn-rounded border-primary"
+                >
+                  Learn more
+                  <span>
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
+                </button>
+              </a>
             </div>
           </div>
           <div
@@ -466,41 +471,13 @@
                     aria-expanded="false"
                     aria-controls="collapseSix"
                   >
-                    Who made Intellect Africa?
+                    Where do I begin on my journey to Education USA?
                   </button>
                 </h2>
                 <div
                   id="collapseSix"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingSix"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong
-                      >Check the about us page
-                      <a href="about.html">here!</a>.</strong
-                    >
-                  </div>
-                </div>
-              </div>
-              <!--ACCORDION ITEM 7-->
-              <div class="accordion-item shadow mb-3">
-                <h2 class="accordion-header" id="headingSeven">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSeven"
-                    aria-expanded="false"
-                    aria-controls="collapseSeven"
-                  >
-                    Where do I begin on my journey to Education USA?
-                  </button>
-                </h2>
-                <div
-                  id="collapseSeven"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingSeven"
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
@@ -765,7 +742,10 @@
             <div class="form w-100 pb-2">
               <h3 class="display-sp--title mb-5">Message Form</h3>
               <form id="myform">
-                <div class="alertForm">Your message has been submitted!</div>
+                <div class="alertForm">
+                  Your message has been submitted! Kindly wait for a response
+                  within 24hrs, thank you!
+                </div>
                 <div class="col-lg-6 col-md-6 mb-3">
                   <input
                     type="text"
@@ -891,7 +871,7 @@
               African students and teenagers.
             </p>
             <!-- Begin Mailchimp Signup Form -->
-            <div id="mc_embed_signup">
+            <div id="mc_embed_signup w-sm-60">
               <form
                 action="https://gmail.us14.list-manage.com/subscribe/post?u=ba17b6bc73d0bcda542c5c180&amp;id=b295f8e514"
                 method="post"
@@ -914,7 +894,7 @@
                       type="email"
                       value=""
                       name="EMAIL"
-                      class="required email"
+                      class="required email w-50"
                       id="mce-EMAIL"
                     />
                   </div>
@@ -951,7 +931,7 @@
                         id="mc-embedded-subscribe"
                         class="button"
                       />
-                      <p class="brandingLogo">
+                      <p class="brandingLogo text-center">
                         <a
                           href="http://eepurl.com/hWTVkv"
                           title="Mailchimp - email marketing made easy and fun"
@@ -1010,12 +990,11 @@
           </div>
         </div>
       </div>
-
-      <!--BACK TO TOP-->
-      <a href="#" class="shadow btn-primary rounded-circle back-to-top">
-        <i class="fas fa-chevron-up"></i>
-      </a>
     </footer>
+    <!--BACK TO TOP-->
+    <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
     <script
       type="text/javascript"
       src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
