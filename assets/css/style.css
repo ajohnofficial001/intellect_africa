@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 .navbar {
   padding: 0 2rem !important;
+  background-color: #ffe67c;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
 
 /*!
@@ -11356,14 +11360,6 @@ textarea.form-control-lg {
   border: none;
 }
 
-#navbar {
-  overflow: visible;
-  background-color: #ffe67c;
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-}
-
 #navbar a {
   float: left;
   display: block;
@@ -11420,7 +11416,7 @@ textarea.form-control-lg {
 
 #freespace {
   background-color: rgba(204, 204, 204, 0.637);
-  background-image: url("/images/background.jpg");
+  background-image: url("../images/background.jpg");
   object-fit: cover;
   color: #fff;
   background-repeat: no-repeat;
