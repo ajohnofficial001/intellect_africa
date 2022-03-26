@@ -11269,7 +11269,7 @@ textarea.form-control-lg {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   display: inline-block;
-  color: #ffe67c;
+  color: #295f2d;
 }
 @media (min-width: 992px) {
   .display-spp {
@@ -11416,16 +11416,16 @@ textarea.form-control-lg {
 
 #freespace {
   background-color: rgba(204, 204, 204, 0.637);
-  background-image: url("../images/background.jpg");
+  background-image: url("/images/L_home.jpg");
   object-fit: cover;
   color: #fff;
   background-repeat: no-repeat;
   opacity: 0.9;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 575.98px) {
   #freespace {
-    background-image: url("/images/L_S_home.jpg");
+    background-image: url("/images/image2.jpg");
     object-fit: contain;
   }
 }
