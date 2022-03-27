@@ -11649,7 +11649,7 @@ textarea.form-control-lg {
 }
 
 .aboutme {
-  padding: 4rem 3rem;
+  padding: 4rem 1.5rem;
   margin: 0 auto;
 }
 .aboutme a {
@@ -11755,6 +11755,10 @@ textarea.form-control-lg {
   .coverImage {
     height: auto !important;
   }
+
+  .coverImageUSA {
+    padding: 2rem !important;
+  }
 }
 .coverImage {
   padding: 10rem 0 5rem 0;
@@ -11775,6 +11779,22 @@ textarea.form-control-lg {
   z-index: -2;
 }
 
+@media (max-width: 567px) {
+  .onlyLarge {
+    display: none;
+  }
+
+  .headerImage {
+    font-size: 1.2rem;
+    object-fit: cover;
+    height: auto;
+  }
+
+  #myImage1 {
+    height: auto;
+    padding-top: 5rem;
+  }
+}
 .get-started {
   padding: 4rem 0;
   background-color: #e9ecef;
