@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intellect Africa</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.css" />
-    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css" />
     <link
       href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css"
       rel="stylesheet"
@@ -19,6 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Battambang&family=Reggae+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    >
   </head>
   <body>
     <!-----CSS PRELOADER-->
@@ -615,21 +618,76 @@
                 </div>
               </div>
 
-              <!--CAROUSEL ITEM 2
+              <!--CAROUSEL ITEM 2-->
               <div class="carousel-item">
-                <!---TESTIONIAL CARD
+                <!---TESTIONIAL CARD-->
                 <div class="virtual_programs__card">
                   <div class="lh-lg">
                     <h3>New York Academy of Sciences</h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Veniam nemo repudiandae nobis assumenda quas laborum
-                    repellat, ea iure iste molestiae facere voluptatem adipisci
-                    velit! Reiciendis corporis minima doloremque expedita
-                    facilis. Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Veniam nemo repudiandae nobis assumenda quas laborum
-                    repellat, ea iure iste molestiae facere voluptatem adipisci
-                    velit! Reiciendis corporis minima doloremque expedita
-                    facilis.
+                    <br />
+                    <h4 class="text-center">Junior Academy</h4>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <p>
+                          Junior Academy participants are enthusiastic learners
+                          and problem solvers with a passion for science,
+                          technology, engineering, and math (STEM).
+                        </p>
+                        <ul class="cta-info__list text-start">
+                          <li><b>Age: </b> 13-17 years old</li>
+                          <li>
+                            <b>Location:</b> Online on our Launchpad platform.
+                          </li>
+                          <li>
+                            <b>Language:</b> All program content and
+                            communication on the platform is in English, and a
+                            strong level of English proficiency is required.
+                            Students’ English proficiency will be assessed
+                            during the application process.
+                          </li>
+                          <li>
+                            <b>Time Commitment:</b>Three to four hours each week
+                            during challenge periods.
+                          </li>
+                          <li>
+                            <b>Cost:</b>None. The Junior Academy is completely
+                            free for participating students.
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-8">
+                        <p>
+                          The Junior Academy is a passionate community of
+                          problem solvers made up of talented students, STEM
+                          experts, and industry leaders from around the world.
+                          Junior Academy members are elite students and mentors
+                          who are dedicated to designing innovative solutions to
+                          society’s greatest challenges! <br />
+                          Each year, the New York Academy of Sciences selects
+                          1,000 of the worlds brightest high school students
+                          (ages 13-17) to become part of The Junior Academy,
+                          joining a dynamic global network of like-minded peers
+                          and mentors. Students work together on Launchpad, the
+                          Academy’s unique, online platform. Launchpad enables
+                          students and STEM professionals to collaborate
+                          virtually as they compete in project-based challenges
+                          focused on the United Nations Sustainable Development
+                          Goals. In addition to competing in global challenges,
+                          students develop STEM and research experience while
+                          advancing vital 21st-century skills such as
+                          leadership, communication, and collaboration. Junior
+                          Academy students work together on challenges in
+                          self-selected, international teams of up to 6 members.
+                          Each team is paired with a STEM professional who
+                          serves as a mentor for the duration of the 10-week
+                          challenge period. Our mentors are all highly motivated
+                          STEM leaders from academia, industry, and research.
+                          The Academy presents challenges twice per year.
+                          Challenges run from September through December and
+                          again from January through May.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -768,6 +826,7 @@
                 <div class="col-lg-6 col-md-6 mb-3">
                   <input
                     type="text"
+                    required="required"
                     placeholder="First Name"
                     id="inputFirstName"
                     class="shadow form-contol-lg form-control"
@@ -776,6 +835,7 @@
                 <div class="col-lg-6 col-md-6 mb-3">
                   <input
                     type="text"
+                    required="required"
                     placeholder="Last Name"
                     id="inputLastName"
                     class="shadow form-contol-lg form-control"
@@ -784,6 +844,7 @@
                 <div class="col-lg-12 mb-3">
                   <input
                     type="email"
+                    required="required"
                     placeholder=" Enter email address"
                     id="inputEmail"
                     class="shadow form-contol-lg form-control"
@@ -793,6 +854,7 @@
                   <input
                     type="text"
                     placeholder="Subject"
+                    required="required"
                     id="subject"
                     class="shadow form-contol-lg form-control"
                   />
@@ -802,6 +864,7 @@
                     name="message"
                     placeholder="message... "
                     id="message"
+                    required="required"
                     rows="8"
                     class="shadow form-contol-lg form-control"
                   ></textarea>
@@ -1016,11 +1079,45 @@
           <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
             <h5 class="text-capitalize fw-bold">Useful links</h5>
             <hr class="bg-white d-inline-block mb-4" />
-            <ul class="list-inline company-list">
+            <ul class="list-inline company-list p-3">
               <li><a href="#">Join our team!</a></li>
               <li><a href="#faq">Help</a></li>
-              <li><a href="">Credits</a></li>
             </ul>
+            <!---- <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              Credits
+            </button>
+
+            <!-- Modal --
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content--
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times;
+                    </button>
+                    <h4 class="modal-title">Modal Header</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-default"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
             <button
               class="fidia-embed-target"
               data-fidia-username="@johnadeyemo"
