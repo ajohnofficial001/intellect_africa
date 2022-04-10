@@ -30,5 +30,4 @@ V 1.0.0 <br>
               Africa.
               
               <h4>Our Solution</h4>
-              <img src="![intellect_africa](https://user-images.githubusercontent.com/85674968/162629063-af2a97f3-5512-4946-baec-5c021274ae20.png)
-">
+             [intellect_africa](https://user-images.githubusercontent.com/85674968/162629063-af2a97f3-5512-4946-baec-5c021274ae20.png)
