@@ -5,7 +5,7 @@ V 1.0.0 <br>
               our research showed how difficult getting the right information might be.
               Thanks to the Intellect Africa community who worked together on this project.
               <br/>
-                <h1><strong>WE PRESENT INTELLECT ACRICA</strong></h1>
+                <h1><strong>WE PRESENT INTELLECT AFRICA</strong></h1>
               <br/>                
               
               Since 2006, the US consulate in Nigeria have been accepting
