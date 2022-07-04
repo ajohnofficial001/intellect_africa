@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Intellect Africa, driving intellectual enquiry among students in African communities."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intellect Africa</title>
     <link
@@ -25,13 +29,13 @@
   </head>
   <body>
     <!----Header background video-->
-    <div class="header w-100">
+    <div class="header-video w-100">
       <div class="wrapper">
         <h2 class="dynamic-texts">
           <span class="invisible">Welcome to Intellect Africa!</span>
         </h2>
       </div>
-      <p>When ambition meets with opportunity, anything is possible...</p>
+      <p>When ambition meets opportunity, anything is possible...</p>
       <video autoplay muted loop id="myVideo">
         <source src="images/media/intro_video.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
@@ -92,7 +96,11 @@
                     >Virtual Programs</a
                   >
                 </li>
-                <li><a class="dropdown-item" href="#">Online Courses</a></li>
+                <li>
+                  <a class="dropdown-item" href="online-cs.html"
+                    >Online Courses</a
+                  >
+                </li>
                 <li>
                   <a class="dropdown-item" href="education.html#educationUSA"
                     >EducationUSA</a
@@ -116,7 +124,42 @@
 
     <!--START SECTION-4 Our Mission-->
     <section id="services" class="services">
-      <div class="container">
+      <div class="container intros">
+        <!--START THE CONTENT FOR THE VIDEO -->
+        <div class="w-70 intros text-center">
+          <div class="video-box">
+            <div class="floating">
+              <img
+                src="images/avatar2.png"
+                class="founder img-fluid"
+                alt="Founder"
+              />
+              <i class="fas fa-location-arrow"></i>
+            </div>
+            <img
+              src="images/home.png"
+              alt="video illustration"
+              class="img-fluid"
+            />
+            <a
+              href="https://www.youtube.com/watch?v=xZcMNh3zOAo?rel=0&vq=hd720"
+              class="glightbox position-absolute top-50 start-50 translate-middle"
+            >
+              <span>
+                <i class="fas fa-play-circle"></i>
+              </span>
+              <span
+                class="borders-animation borders-animation--border-1"
+              ></span>
+              <span
+                class="borders-animation borders-animation--border-2"
+              ></span>
+              <span
+                class="borders-animation borders-animation--border-3"
+              ></span>
+            </a>
+          </div>
+        </div>
         <div class="row text-center">
           <h2 class="display-3 fw-bold">Our Mission</h2>
           <div class="heading-line mb-1"></div>
@@ -215,7 +258,7 @@
                 worldwide. If you're curious and inquisitive enough, learn
                 in-demand skills today.
               </p>
-              <a href="https://www.coursera.org/">
+              <a href="online-cs.html#coursera">
                 <button
                   type="button"
                   class="rounded-pill btn-rounded border-primary"
@@ -278,7 +321,7 @@
     <!--Intellect Africa-->
     <section id="freespace" class="mt-5">
       <div
-        class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column headerImage"
+        class="darker cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
       >
         <div class="upper-boundary"></div>
         <main class="px-3 text-center">
@@ -397,7 +440,7 @@
                   <div class="accordion-body">
                     <strong
                       >Get started with the message box
-                      <a href="#contact">below</a>.</strong
+                      <a href="#contact">below.</a></strong
                     >
                   </div>
                 </div>
@@ -450,7 +493,7 @@
                 >
                   <div class="accordion-body">
                     <strong
-                      >Support us by sharing your quality feedback below.
+                      >Support us by sharing your quality feedback
                       <a href="#contact">below</a>.</strong
                     >
                     And, we don't mind if you buy us cup of coffe on
@@ -464,6 +507,7 @@
                   </div>
                 </div>
               </div>
+
               <!--ACCORDION ITEM 6-->
               <div class="accordion-item shadow mb-3">
                 <h2 class="accordion-header" id="headingSix">
@@ -488,7 +532,7 @@
                     <strong>
                       Check the educationUSA page, you will be redirected to
                       their website where you will find the next step.
-                      <a href="education.html">Here!</a>.</strong
+                      <a href="education.html#educationUSA">Here!</a>.</strong
                     >
                   </div>
                 </div>
@@ -905,9 +949,9 @@
             <div class="contact-box__icon"></div>
             <div class="contact-box__info">
               <a
-                href="mailto:intellectafrica03@gmail.com"
+                href="mailto:info@intellect-africa.live"
                 class="contact-box__info--title"
-                >intellectafrica03@gmail.com</a
+                >info@intellect-africa.live</a
               >
               <p class="contact-box__info--subtitle">Online support</p>
             </div>
@@ -920,7 +964,7 @@
             <div class="contact-box__info">
               <a
                 href="https://maps.app.goo.gl/QadcdY9WjwPKJiEn7"
-                class="contact-box__info--title"
+                class="contact-box__info--title iLeave"
                 target="_blank"
                 >Ogun, Nigeria</a
               >
@@ -1050,17 +1094,26 @@
             <hr class="bg-white d-inline-block mb-4" />
             <ul class="list-inline company-list">
               <li>
-                <a href="https://opportunityfundsnigeria.org/" target="_blank"
+                <a
+                  href="https://opportunityfundsnigeria.org/"
+                  target="_blank"
+                  class="iLeave"
                   >Opportunity Funds Programme</a
                 >
               </li>
               <li>
-                <a href="https://www.coursera.org/" target="_blank"
+                <a
+                  href="https://www.coursera.org/"
+                  target="_blank"
+                  class="iLeave"
                   >Take an online course</a
                 >
               </li>
               <li>
-                <a href="https://www.globalcitizenyear.org/" target="_blank"
+                <a
+                  href="https://www.globalcitizenyear.org/"
+                  target="_blank"
+                  class="iLeave"
                   >Global Citizens Year Academy</a
                 >
               </li>
@@ -1068,6 +1121,7 @@
                 <a
                   href="https://www.nyas.org/programs/global-stem-alliance/the-junior-academy/"
                   target="_blank"
+                  class="iLeave"
                   >New York Academy of Sciences</a
                 >
               </li>
@@ -1085,8 +1139,25 @@
                 >
               </li>
               <li><a href="#faq">Help</a></li>
-              <li><a href="about.html">Credits</a></li>
             </ul>
+            <button type="button" id="myBtn">Credits</button> <br />
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <span>
+                  <p>Credits</p>
+                  <ul>
+                    <li>MasterCard Foundation</li>
+                    <li>EducationUSA</li>
+                    <li>African Leadership University</li>
+                    <li>African Leadership Academy</li>
+                    <li>Global Citizen Year Academy</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
             <button
               class="fidia-embed-target"
               data-fidia-username="@johnadeyemo"
@@ -1117,30 +1188,44 @@
       </div>
     </footer>
     <!--BACK TO TOP-->
-    <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+    <a
+      href="#"
+      class="shadow btn-primary rounded-circle back-to-top"
+      aria-label="to the top"
+    >
       <i class="fas fa-chevron-up"></i>
     </a>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
     <script
       type="text/javascript"
       src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
     ></script>
-    <script type="text/javascript">
-      (function ($) {
-        window.fnames = new Array();
-        window.ftypes = new Array();
-        fnames[0] = "EMAIL";
-        ftypes[0] = "email";
-        fnames[2] = "LNAME";
-        ftypes[2] = "text";
-        fnames[3] = "ADDRESS";
-        ftypes[3] = "address";
-        fnames[4] = "PHONE";
-        ftypes[4] = "phone";
-        fnames[5] = "BIRTHDAY";
-        ftypes[5] = "birthday";
-      })(jQuery);
-      var $mcj = jQuery.noConflict(true);
-    </script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/vendors/js/glightbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.9.0/firebase.js"></script>
