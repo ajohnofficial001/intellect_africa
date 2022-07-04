@@ -1,15 +1,15 @@
 //PRELOADER
-var loader = document.getElementById("preloader");
+/*var loader = document.getElementById("preloader");
 
 window.addEventListener("load", function () {
-  loader.style.display = "none";
+  loader.style.display("none");
 });
 var timer;
 function showLoading() {
   timer = setTimeout(function () {
     loader.show(0);
   }, 4000);
-}
+} */
 
 //Sticky Navbar on scroll
 window.onscroll = function () {
@@ -76,7 +76,7 @@ function submitForm(e) {
   document.getElementById("myform").reset();
 }
 
-//Function to get form from value
+//Function to get value from form
 function getInputval(id) {
   return document.getElementById(id).value;
 }
@@ -98,3 +98,78 @@ function saveMessage(
     message: message,
   });
 }
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+// POP_UP before leaving Intellect Africa
+var leave = document.getElementsByClassName("iLeave");
+
+leave.onclick = function () {
+  alert("You're about to leave Intellect Africa");
+};
+
+//GLIGHT BOX VIDEO
+var lightbox = GLightbox();
+lightbox.on("open", (target) => {
+  console.log("lightbox opened");
+});
+var lightboxDescription = GLightbox({
+  selector: ".glightbox2",
+});
+var lightboxVideo = GLightbox({
+  selector: ".glightbox3",
+});
+lightboxVideo.on("slide_changed", ({ prev, current }) => {
+  console.log("Prev slide", prev);
+  console.log("Current slide", current);
+
+  const { slideIndex, slideNode, slideConfig, player } = current;
+
+  if (player) {
+    if (!player.ready) {
+      // If player is not ready
+      player.on("ready", (event) => {
+        // Do something when video is ready
+      });
+    }
+
+    player.on("play", (event) => {
+      console.log("Started play");
+    });
+
+    player.on("volumechange", (event) => {
+      console.log("Volume change");
+    });
+
+    player.on("ended", (event) => {
+      console.log("Video ended");
+    });
+  }
+});
+
+var lightboxInlineIframe = GLightbox({
+  selector: ".glightbox4",
+});
