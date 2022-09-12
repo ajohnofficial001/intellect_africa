@@ -19,14 +19,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Battambang&family=Reggae+One&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!----Header background Image-->
+    <div id="education_intro" class="header w-100 p-0">
+      <div class="darker w-100 h-100">
+          <p>If you think education is expensive try ignorance.</p>
+          <img
+          src="images/edu_undergrad.jpg"
+          alt="EducasionUSA undergraduate"
+          class="img-fluid myImage1 sm-scr"
+        />
+      </div>
+    </div>  
     <!-- START THE NAVBAR SECTION -->
     <nav
-      class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top"
+      class="navbar navbar-expand-lg navbar-dark menu shadow"
       id="navbar"
     >
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="images/logo.png" alt="" class="img-fluid" style="font-family: 'Battambang', cursive;" />
+          <img src="images/logo.png" alt="" class="img-fluid" style="height: 3.5rem" />
           Intellect <span style="font-family: 'Reggae One', cursive;">A</span>
         </a>
         <button
@@ -67,7 +78,7 @@
               aria-labelledby="navbarScrollingDropdown"
             >
               <li><a class="dropdown-item" href="index.html#virtual_programs">Virtual Programs</a></li>
-              <li><a class="dropdown-item" href="#">Online Courses</a></li>
+              <li><a class="dropdown-item" href="online-cs.html">Online Courses</a></li>
               <li><a class="dropdown-item" href="education.html#educationUSA">EducationUSA</a></li>
             </ul>
           </li>
@@ -88,10 +99,10 @@
     <!--Intro to the education page-->
     <section class="education" id="education">
       <div class="container-fuild">
-        <div class="headerImage">
+       <!--- <div class="header headerSmall">
           <i class="fas fa-quote-left pr-4"></i>
           <p>If you think education is expensive try ignorance.</p>
-          <div id="myImage1">
+          <div id="myImage1" >
             <img
               class="img-fluid myImage1"
               src="images/portfolio2.jpg"
@@ -105,7 +116,7 @@
             without being educated!
           </p>
         </div>
-      </div>  
+      </div>  -->
 
       
       <div class="container pt-5">
@@ -115,7 +126,7 @@
           </h1>
           <div class="heading-line"></div>
           <p class="lh-lg">
-            You might not know this are available to you, that is why you're
+            You might not know these are available to you, that is why you're
             here. Information is power!
           </p>
         </div>
@@ -181,7 +192,7 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">African Leadership Academy</h5>
+                    <h5 class="card-title" id="ala">African Leadership Academy</h5>
                     <p class="card-text">African Leadership Academy seeks to transform Africa by developing a powerful network of young leaders who will work together to address Africa’s greatest challenges, achieve extraordinary social impact, and accelerate the continent’s growth trajectory.
                       <h6>Here is what ALA have to say:</h6>
                       Africa’s greatest need is ethical and entrepreneurial leadership. 
@@ -209,7 +220,7 @@
             </div>
           </div>
          <!----ALU SECTION-->
-          <div class="col-12 col-lg-6 shadow">
+          <div class="col-12 col-lg-6 shadow" id="alu">
             <div class="card mb-3">
               <div class="row g-0">
                 <div class="col-md-4">
@@ -284,7 +295,7 @@
               <img src="images/MinervaStudent_ClassViaActiveLearningForum.webp" class="myImage img-fluid d-block w-100" alt="...">
               <div class="carousel-caption d-md-block">
                 <h5>Stay connected with professors and peers!</h5>
-                <p>Forum, makes the Minerva dream a reality. Are ypou ready to participate actively in your classes?</p>
+                <p>Forum, makes the Minerva dream a reality. Are you ready to participate actively in your classes?</p>
               </div>
             </div>
           </div>
@@ -417,7 +428,7 @@
             <p>Do you know that the United States Embassy in Nigeria has been assisting students to study in the US since 2006?</p>
             <img
               class="img-fluid myImage"
-              src="images/edu_student.jfif"
+              src="images/scholars.jpg"
               
               alt="educationUSA"
             />
@@ -507,9 +518,9 @@
             <div class="contact-box__icon"></div>
             <div class="contact-box__info">
               <a
-                href="mailto:intellectafrica03@gmail.com"
+                href="mailto:info@intellect-africa.live"
                 class="contact-box__info--title"
-                >intellectafrica03@gmail.com</a
+                >info@intellect-africa.live</a
               >
               <p class="contact-box__info--subtitle">Online support</p>
             </div>
@@ -568,8 +579,8 @@
             <h5 class="text-capitalize fw-bold">Intellect Africa</h5>
             <hr class="bg-white d-inline-block mb-4" />
             <p class="lh-lg">
-              Our Mission is to curate list of global opportunities available to
-              African students and teenagers.
+                Our mission is to curate list of global opportunities available
+                to students and teenagers in Africa, and to guide them while harnessing this programs and opportunities.
             </p>
             <!-- Begin Mailchimp Signup Form -->
             <div id="mc_embed_signup" class="w-50">
@@ -686,8 +697,24 @@
                   >Join our team!</a
                 >
               </li>
-              <li><a href="#faq">Help</a></li>
-              <li><a href="about.html">Credits</a></li>
+              <li><a href="#faq">Help</a></li>   
+              <button type="button" id="myBtn">Credits</button> <br />
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modalContent">
+                  <span class="close">&times;</span>
+                  <span>
+                    <p>~Credits~</p>
+                    <ul>
+                      <li>MasterCard Foundation</li>
+                      <li>EducationUSA</li>
+                      <li>African Leadership University</li>
+                      <li>African Leadership Academy</li>
+                      <li>Global Citizen Year Academy</li>
+                    </ul>
+                  </span>
+                </div>  
             </ul>
             <button
               class="fidia-embed-target"
@@ -727,6 +754,29 @@
       src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
     ></script>
     <script type="text/javascript">
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
       (function ($) {
         window.fnames = new Array();
         window.ftypes = new Array();
